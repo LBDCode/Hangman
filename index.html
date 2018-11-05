@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="Assets/css/style.css">
     <title>Hangman</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="box gameArea">
-            <h1>Current Game</h1>
-            <div class="word" id="ans"></div>
-            <div class="word" id="guess"></div>
-            <!-- <button id="newGame">New Game</button> -->
-        <!-- </div>              
-        <div class="box scoreArea"></div> -->
-            <div id="score"></div>
-            <div id="guessesRemain"></div>
-        <!-- <div class="box wrongGuesses"></div> -->
-            <div id="wrongLetters"></div>
+    
+    <div class="container gameArea">
+        <div>
+            <h1>Harvest Hangman</h1>
+            <h2 id="guess"></h2>       
+            <div id="score">Score: </div>
+            <div id="guessesRemain">Remaining Guesses: </div>          
+            <div id="wrongLetters">Incorrect Guesses: </div>       
+            <div id="message">Click "New Game" to begin!</div> 
             <button id="newGame">New Game</button>
+        
+        </div>
     </div>
+  
 
 
-    <script src="Assets/JS/script.js">
-        </script>
+    <script src="Assets/JS/script.js"></script>
+    
 </body>
 </html>
